@@ -57,6 +57,12 @@ position: relative;
 float: right;
 }
 
+#commentbox {
+background: #fff;
+width: 500px;
+height: 100px;
+}
+
 #footer{
 clear: left;
 width: 100%;
@@ -136,7 +142,7 @@ margin: 0;
 }
 
 .newstabs li a{
-float: left;
+float: right;
 display: block;
 text-decoration: none;
 margin: 0;
