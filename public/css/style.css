@@ -52,6 +52,11 @@ background: #C8FC98;
 align: center;
 }
 
+#video {
+position: relative;
+float: right;
+}
+
 #footer{
 clear: left;
 width: 100%;
@@ -147,16 +152,17 @@ color: white;
 
 .newstabs li a:hover, .newstabs li.selected a{
 background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+}
 
-/* actiontabs*/
+/* fancytabs*/
 
 
-.actiontabs{
+.fancytabs{
 width: 100%;
 overflow: hidden;
 }
 
-.actiontabs ul{
+.fancytabs ul{
 margin: 0;
 padding: 0;
 padding-left: 10px; /*offset of tabs relative to browser left edge*/
@@ -164,12 +170,12 @@ font: bold 12px Verdana;
 list-style-type: none;
 }
 
-.actiontabs li{
+.fancytabs li{
 display: inline;
 margin: 0;
 }
 
-.actiontabs li a{
+.fancytabs li a{
 float: left;
 display: block;
 text-decoration: none;
@@ -180,10 +186,10 @@ color: white;
 background: #414141; /*background of tabs (default state)*/
 }
 
-.actiontabs li a:visited{
+.fancytabs li a:visited{
 color: white;
 }
 
-.actiontabs li a:hover, .actiontabs li.selected a{
+.fancytabs li a:hover, .fancytabs li.selected a{
 background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
 }
