@@ -7,3 +7,12 @@ $(document).ready(function(){
   });
 });
 
+
+var sign_petition = function(){
+    $.each($('.petition_form_text'), function( which, each){
+	    each.value = "";
+	});
+
+    $('#petition_submit').hide();
+    $('#petition_thanks').fadeIn();
+}

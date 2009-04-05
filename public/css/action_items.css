@@ -28,7 +28,7 @@
 }
 
 .bronze{
-	color: bronze;
+	color: #D98719;
 }
 
 .submit { 
@@ -94,4 +94,12 @@ textarea.em_body {
   width: 400px;
   height: 70px;
   margin: 10px 40px;
+}
+
+#petition_thanks{
+  display:none;
+  line-height: 40px;
+  background-color: #DDFFDD;
+  border: 1px solid #00D900;
+  text-align: center;
 }

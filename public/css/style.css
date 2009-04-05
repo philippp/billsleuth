@@ -75,6 +75,8 @@ background: black;
 color: #FFF;
 text-align: center;
 padding: 4px 0;
+position: relative;
+bottom: 0;
 }
 
 #footer a{
@@ -205,7 +207,7 @@ color: white;
 background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
 }
 
-.hinted { color: #008800; }
+.hinted { color: #888888; }
 
 
 .message-item { 
@@ -288,3 +290,4 @@ table.status td.bold-green {
   color: #009900;
   font-weight: bolder;
 }
+
