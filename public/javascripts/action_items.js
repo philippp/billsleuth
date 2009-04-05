@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $.each($('.action_item'), function(which, each){
-    $(each).find('h1').click(function(){
+    $(each).find('.action_header').click(function(){
       $('.content').slideUp();
       $(each).find('.content').slideDown();
     });
