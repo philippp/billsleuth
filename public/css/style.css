@@ -4,7 +4,7 @@ margin:0;
 padding:0;
 line-height: 1.1em;
 background: transparent url(http://xoxiety.com/billsleuth/public/images/headergradient.jpg) top left repeat-x;
-font-family: arial, sans-serif;
+font-family: helvetica, arial, sans-serif;
 }
 
 .clear {
@@ -13,6 +13,12 @@ clear: both;
 
 h2, h3 {
 color: #0e83a9;
+}
+
+h4 {
+color: #0e83a9;
+font-weight: bold;
+font-size: 22px;
 }
 
 #maincontainer{
@@ -92,8 +98,8 @@ float: right;
 }
 
 #commentbox {
-background: #d2d2d2;
-width: 610px;
+border: thin solid #d2d2d2;
+width: 590px;
 height: 100px;
 margin-bottom: 20px;
 }
@@ -122,7 +128,7 @@ margin-top: 0;
 
 
 .mattblacktabs{
-margin-top: -67px;
+margin-top: -68px;
 width: 100%;
 overflow: hidden;
 /* border-bottom: medium solid #fff; /*bottom horizontal line that runs beneath tabs*/ */
@@ -130,10 +136,12 @@ overflow: hidden;
 
 .mattblacktabs ul{
 margin: 0;
+
 padding: 0;
-padding-right: 10px; /*offset of tabs relative to browser left edge*/
-font: bold 12px Verdana;
+padding-right: 0px; /*offset of tabs relative to browser left edge*/
+font: bold 12px helvetica;
 list-style-type: none;
+text-transform: uppercase;
 }
 
 .mattblacktabs li{
@@ -289,8 +297,12 @@ color: white;
 background: #03fc38; /*background of tabs (default state)*/
 }
 
+.message-item {
+border-bottom: thin solid #d2d2d2;
+}
 
-/* fonts */
+
+/* type */
 
 #newsitem h2, h3, #billstatus h2, h3{
 
@@ -309,7 +321,7 @@ font: 11px;
 }
 
 #billstatus {
-background:  #78c4dc;
+background:  #abe0f1;
 border: 2px solid  #0e83a9;
 }
 
@@ -327,10 +339,25 @@ line-height: 1.1em;
 color: #0e83a9;
 }
 
+
+
+
 #leftcolumn p {
 font-family: trebuchet;
 font-size: 14px;
 line-height: 1em;
+}
+
+/* sidebar bullet points */
+
+
+
+#leftcolumn li {
+list-style-image: url(../images/bullet.png);
+color: #0e83a9;
+font-weight: bold;
+font-family: trebuchet;
+font-size: 16px;
 }
 
 
