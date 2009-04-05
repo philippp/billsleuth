@@ -1,0 +1,293 @@
+
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#maincontainer{
+width: 840px; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+}
+
+#topsection{
+background: #EAEAEA;
+height: 60px; /*Height of top section*/
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+h3 { 
+   margin: 0; 
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin-left: 220px; /*Set left margin to LeftColumnWidth*/
+}
+
+#newsitem{
+margin: 20px;
+background: #d2d2d2;
+padding: 1px 0;
+}
+
+#pagetitle{
+margin: 20px;
+}
+
+#leftcolumn{
+float: left;
+width: 200px; /*Width of left column*/
+margin-left: -840px; /*Set left margin to -(MainContainerWidth)*/
+background: #C8FC98;
+}
+
+#advertisement {
+align: center;
+}
+
+#video {
+position: relative;
+float: right;
+}
+
+#commentbox {
+background: #fff;
+width: 500px;
+height: 100px;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: black;
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+position: relative;
+bottom: 0;
+}
+
+#footer a{
+color: #FFFF80;
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+
+
+.mattblacktabs{
+width: 100%;
+overflow: hidden;
+border-bottom: 1px solid black; /*bottom horizontal line that runs beneath tabs*/
+}
+
+.mattblacktabs ul{
+margin: 0;
+padding: 0;
+padding-left: 10px; /*offset of tabs relative to browser left edge*/
+font: bold 12px Verdana;
+list-style-type: none;
+}
+
+.mattblacktabs li{
+display: inline;
+margin: 0;
+}
+
+.mattblacktabs li a{
+float: left;
+display: block;
+text-decoration: none;
+margin: 0;
+padding: 7px 8px; /*padding inside each tab*/
+border-right: 1px solid white; /*right divider between tabs*/
+color: white;
+background: #414141; /*background of tabs (default state)*/
+}
+
+.mattblacktabs li a:visited{
+color: white;
+}
+
+.mattblacktabs li a:hover, .mattblacktabs li.selected a{
+background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+}
+
+/* newstabs*/
+
+
+.newstabs{
+width: 100%;
+overflow: hidden;
+}
+
+.newstabs ul{
+margin: 0;
+padding: 0;
+padding-left: 10px; /*offset of tabs relative to browser left edge*/
+font: bold 12px Verdana;
+list-style-type: none;
+}
+
+.newstabs li{
+display: inline;
+margin: 0;
+}
+
+.newstabs li a{
+float: right;
+display: block;
+text-decoration: none;
+margin: 0;
+padding: 7px 8px; /*padding inside each tab*/
+border-right: 1px solid white; /*right divider between tabs*/
+color: white;
+background: #414141; /*background of tabs (default state)*/
+}
+
+.newstabs li a:visited{
+color: white;
+}
+
+.newstabs li a:hover, .newstabs li.selected a{
+background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+}
+
+/* fancytabs*/
+
+
+.fancytabs{
+width: 100%;
+overflow: hidden;
+}
+
+.fancytabs ul{
+margin: 0;
+padding: 0;
+padding-left: 10px; /*offset of tabs relative to browser left edge*/
+font: bold 12px Verdana;
+list-style-type: none;
+}
+
+.fancytabs li{
+display: inline;
+margin: 0;
+}
+
+.fancytabs li a{
+float: left;
+display: block;
+text-decoration: none;
+margin: 0;
+padding: 7px 8px; /*padding inside each tab*/
+border-right: 1px solid white; /*right divider between tabs*/
+color: white;
+background: #414141; /*background of tabs (default state)*/
+}
+
+.fancytabs li a:visited{
+color: white;
+}
+
+.fancytabs li a:hover, .fancytabs li.selected a{
+background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+}
+
+.hinted { color: #888888; }
+
+
+.message-item { 
+  background-color: #E2E2E2; 
+  border-top: 1px solid #414141; 
+  border-bottom: 1px solid #414141;
+  margin-bottom: 20px; 
+} 
+
+.right {
+  float: right;
+}
+
+.left { 
+  float: left;
+}
+
+.submit{
+
+background-color:#009900;
+border-color:#00C800 #003F00 #003F00 #00C800;
+border-style:solid;
+border-width:2px;
+color:white;
+cursor:pointer;
+font-size:14px;
+padding:5px 10px;
+}
+
+.submit-red { 
+
+background-color:#990000;
+border-color:#C80000 #3F0000 #3F0000 #C80000;
+border-style:solid;
+border-width:2px;
+color:white;
+cursor:pointer;
+font-size:14px;
+padding:5px 10px;
+}
+
+.spacer-20 {
+	display: inline-block; 
+	width: 20px;
+}
+
+div.ad-space { 
+  border: 1px solid red; 
+  margin: 20px;
+  padding: 5px;
+}
+
+div.ad-space div.disclaimer { 
+  color: 880000;
+  float: right;	
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+div.ad-space p{
+  margin: 5px;
+   padding: 0;
+}
+
+table.status { 
+  font-size: 12px;
+  font-family: helvetica, arial;
+}
+
+table.status td { 
+  margin: 0;
+  padding: 0 5px;
+}
+
+table.status td.border { 
+  border: 1px solid black;
+}
+
+table.status td.bold-green { 
+  color: #009900;
+  font-weight: bolder;
+}
+

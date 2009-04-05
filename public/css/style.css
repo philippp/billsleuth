@@ -2,34 +2,41 @@
 body{
 margin:0;
 padding:0;
-line-height: 1.5em;
+line-height: 1.1em;
+background: transparent url(http://xoxiety.com/billsleuth/public/images/headergradient.jpg) top left repeat-x;
+font-family: arial, sans-serif;
 }
 
-b{font-size: 110%;}
-em{color: red;}
+h2, h3 {
+color: #0e83a9;
+}
 
 #maincontainer{
-width: 840px; /*Width of main container*/
-margin: 0 auto; /*Center container on page*/
+width: 900px; /*Width of main container*/
+margin: auto; /*Center container on page*/
+background: transparent;
 }
 
 #topsection{
-background: #EAEAEA;
-height: 60px; /*Height of top section*/
+background: transparent url(../images/logo.png) top left no-repeat;
+height: 140px; /*Height of top section*/
+margin-top: -10px;
+
 }
 
 #topsection h1{
-margin: 0;
-padding-top: 15px;
-}
-
-h3 { 
-   margin: 0; 
+display: none;
+font-size: 80px;
+margin: 0px;
+padding-top: 45px;
+color: #fff;
+text-transform: uppercase;
 }
 
 #contentwrapper{
 float: left;
 width: 100%;
+margin-top: 40px;
 }
 
 #contentcolumn{
@@ -38,9 +45,11 @@ margin-left: 220px; /*Set left margin to LeftColumnWidth*/
 
 #newsitem{
 margin: 20px;
-background: #d2d2d2;
-padding: 1px 0;
+background: #fff;
+border: 2px solid #d2d2d2;
 }
+
+
 
 #pagetitle{
 margin: 20px;
@@ -48,13 +57,29 @@ margin: 20px;
 
 #leftcolumn{
 float: left;
-width: 200px; /*Width of left column*/
-margin-left: -840px; /*Set left margin to -(MainContainerWidth)*/
-background: #C8FC98;
+width: 209px; /*Width of left column*/
+margin-left: -900px; /*Set left margin to -(MainContainerWidth)*/
+
+background: transparent;
+border-left: 8px solid #78c4dc;
+border-right: 8px solid #78c4dc;
+border-bottom: 8px solid #78c4dc;
+margin-top: 200px;
+padding-top: 20px;
 }
 
+
+#leftcolumnshell {float: left;
+width: 230px; /*Width of left column*/
+margin-left: -902px; /*Set left margin to -(MainContainerWidth)*/
+background: #fff url(../images/sidebarbanner.png) top center no-repeat;
+padding-top: 220px;
+margin-top: 30px;
+}
+
+
 #advertisement {
-align: center;
+margin-left: 20px;
 }
 
 #video {
@@ -63,9 +88,10 @@ float: right;
 }
 
 #commentbox {
-background: #fff;
-width: 500px;
+background: #d2d2d2;
+width: 610px;
 height: 100px;
+margin-bottom: 20px;
 }
 
 #footer{
@@ -75,12 +101,14 @@ background: black;
 color: #FFF;
 text-align: center;
 padding: 4px 0;
-position: relative;
-bottom: 0;
+background: #3089fc;
+padding: 8px;
 }
 
+
 #footer a{
-color: #FFFF80;
+color: #FFF;
+font-weight: bold;
 }
 
 .innertube{
@@ -90,33 +118,37 @@ margin-top: 0;
 
 
 .mattblacktabs{
+margin-top: -67px;
 width: 100%;
 overflow: hidden;
-border-bottom: 1px solid black; /*bottom horizontal line that runs beneath tabs*/
+/* border-bottom: medium solid #fff; /*bottom horizontal line that runs beneath tabs*/ */
 }
 
 .mattblacktabs ul{
 margin: 0;
 padding: 0;
-padding-left: 10px; /*offset of tabs relative to browser left edge*/
+padding-right: 10px; /*offset of tabs relative to browser left edge*/
 font: bold 12px Verdana;
 list-style-type: none;
 }
 
 .mattblacktabs li{
 display: inline;
-margin: 0;
+margin:0px;
+color: #129cc9;
+
 }
 
 .mattblacktabs li a{
-float: left;
+float: right;
 display: block;
 text-decoration: none;
-margin: 0;
+border-right: 4px solid #129cc9;
+
 padding: 7px 8px; /*padding inside each tab*/
-border-right: 1px solid white; /*right divider between tabs*/
-color: white;
-background: #414141; /*background of tabs (default state)*/
+
+color: #129cc9;
+background: #fff; /*background of tabs (default state)*/
 }
 
 .mattblacktabs li a:visited{
@@ -124,7 +156,7 @@ color: white;
 }
 
 .mattblacktabs li a:hover, .mattblacktabs li.selected a{
-background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+background: #c5faf8; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
 }
 
 /* newstabs*/
@@ -154,9 +186,9 @@ display: block;
 text-decoration: none;
 margin: 0;
 padding: 7px 8px; /*padding inside each tab*/
-border-right: 1px solid white; /*right divider between tabs*/
+border-right: 3px solid white; /*right divider between tabs*/
 color: white;
-background: #414141; /*background of tabs (default state)*/
+background: #3abadd; /*background of tabs (default state)*/
 }
 
 .newstabs li a:visited{
@@ -164,7 +196,7 @@ color: white;
 }
 
 .newstabs li a:hover, .newstabs li.selected a{
-background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+background: #3089fc; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
 }
 
 /* fancytabs*/
@@ -207,87 +239,41 @@ color: white;
 background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
 }
 
-.hinted { color: #888888; }
+/* fonts */
 
+#newsitem h2, h3 {
 
-.message-item { 
-  background-color: #E2E2E2; 
-  border-top: 1px solid #414141; 
-  border-bottom: 1px solid #414141;
-  margin-bottom: 20px; 
-} 
-
-.right {
-  float: right;
+	font-size: 22px;
+color: #0e83a9;
+font-family: georgia, garamond;
+font-style: italic;
+font-weight: bold;
+border-bottom: 2px solid  #0e83a9;
+padding-bottom: 6px;
 }
 
-.left { 
-  float: left;
+#newsitem p{
+font-family: georgia;
+font: 11px;
 }
 
-.submit{
-
-background-color:#009900;
-border-color:#00C800 #003F00 #003F00 #00C800;
-border-style:solid;
-border-width:2px;
-color:white;
-cursor:pointer;
-font-size:14px;
-padding:5px 10px;
+#pagetitle h2{
+text-transform: uppercase;
+font-weight: bold;
+font: 26px;
+color: white;
+background: #3089fc;
+padding: 8px;
 }
 
-.submit-red { 
-
-background-color:#990000;
-border-color:#C80000 #3F0000 #3F0000 #C80000;
-border-style:solid;
-border-width:2px;
-color:white;
-cursor:pointer;
-font-size:14px;
-padding:5px 10px;
+#leftcolumn h3 {
+color: #0e83a9;
 }
 
-.spacer-20 {
-	display: inline-block; 
-	width: 20px;
+#leftcolumn p {
+font-family: trebuchet;
+font-size: 14px;
+line-height: 1em;
 }
 
-div.ad-space { 
-  border: 1px solid red; 
-  margin: 20px;
-  padding: 5px;
-}
-
-div.ad-space div.disclaimer { 
-  color: 880000;
-  float: right;	
-  font-size: 10px;
-  margin-top: 10px;
-}
-
-div.ad-space p{
-  margin: 5px;
-   padding: 0;
-}
-
-table.status { 
-  font-size: 12px;
-  font-family: helvetica, arial;
-}
-
-table.status td { 
-  margin: 0;
-  padding: 0 5px;
-}
-
-table.status td.border { 
-  border: 1px solid black;
-}
-
-table.status td.bold-green { 
-  color: #009900;
-  font-weight: bolder;
-}
 
