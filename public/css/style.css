@@ -334,3 +334,11 @@ line-height: 1em;
 }
 
 
+.take_me_home{
+  float: right;
+}
+
+.more_issues_button{
+  background-color: green;
+  float: right;
+}
