@@ -1,6 +1,8 @@
 .action_item{
   border: 1px solid black;
   padding: 5px;
+  margin: 10px 20px;
+  background-color:#C8FC98;
 }
 
 .action_item h1, h2, h3{
@@ -13,9 +15,13 @@
 
 .action_header { 
   border : 1px solid black;
-  background-color : grey;
+  background-color:#D2D2D2;
   cursor: pointer;
   padding: 5px;
+}
+
+.action_item .content { 
+	     background-color: white;
 }
 
 .gold { 
