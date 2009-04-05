@@ -7,6 +7,10 @@ background: transparent url(http://xoxiety.com/billsleuth/public/images/headergr
 font-family: arial, sans-serif;
 }
 
+.clear {
+clear: both;
+}
+
 h2, h3 {
 color: #0e83a9;
 }
@@ -43,7 +47,7 @@ margin-top: 40px;
 margin-left: 220px; /*Set left margin to LeftColumnWidth*/
 }
 
-#newsitem{
+#newsitem, #billstatus {
 margin: 20px;
 background: #fff;
 border: 2px solid #d2d2d2;
@@ -239,9 +243,56 @@ color: white;
 background: black; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
 }
 
+/* newstabs*/
+
+
+.newstabs{
+width: 100%;
+overflow: hidden;
+}
+
+.statustabs ul{
+
+margin: 0;
+
+padding: 0;
+padding-left: 10px; /*offset of tabs relative to browser left edge*/
+font: bold 12px Verdana;
+list-style-type: none;
+}
+
+.statustabs li{
+display: inline;
+margin: 0;
+}
+
+.statustabs li a{
+float: right;
+display: block;
+text-decoration: none;
+margin: 0;
+padding: 7px 8px; /*padding inside each tab*/
+border-right: 3px solid  #78c4dc; /*right divider between tabs*/
+color: white;
+background: #ff0000; /*background of tabs (default state)*/
+}
+
+
+.passed {
+float: right;
+display: block;
+text-decoration: none;
+margin: 0;
+padding: 7px 8px; /*padding inside each tab*/
+border-right: 3px solid  #78c4dc; /*right divider between tabs*/
+color: white;
+background: #03fc38; /*background of tabs (default state)*/
+}
+
+
 /* fonts */
 
-#newsitem h2, h3 {
+#newsitem h2, h3, #billstatus h2, h3{
 
 	font-size: 22px;
 color: #0e83a9;
@@ -252,9 +303,14 @@ border-bottom: 2px solid  #0e83a9;
 padding-bottom: 6px;
 }
 
-#newsitem p{
+#newsitem, #billstatus p{
 font-family: georgia;
 font: 11px;
+}
+
+#billstatus {
+background:  #78c4dc;
+border: 2px solid  #0e83a9;
 }
 
 #pagetitle h2{
@@ -264,6 +320,7 @@ font: 26px;
 color: white;
 background: #3089fc;
 padding: 8px;
+line-height: 1.1em;
 }
 
 #leftcolumn h3 {
