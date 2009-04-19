@@ -2,7 +2,7 @@
   border: 1px solid black;
   padding: 5px;
   margin: 10px 20px;
-  background-color:#C8FC98;
+  background-color:#78C4DC;
 }
 
 .action_item h1, h2, h3{
@@ -17,9 +17,13 @@
   border : 1px solid black;
   background-color:#D2D2D2;
   cursor: pointer;
-  padding: 5px;
+  padding: 5px 10px;
+  line-height: 40px;
 }
 
+.action_header h2, .action_header h3 { 
+font-family: helvetica, arial;
+}
 .action_item .content { 
 	     background-color: white;
 }
@@ -87,13 +91,18 @@ textarea.em_body {
 
 .carrier{
   float: left;
-  background-color: lightgrey;
   padding: 5px;
   margin: 0px 5px;
 }
 
 .import_message{
   float: left;
+  line-height: 22px;
+  font-weight: bolder;
+}
+
+.import_spacer { 
+  padding: 10px 0;
 }
 
 .editable_letter{
@@ -103,6 +112,14 @@ textarea.em_body {
 }
 
 #petition_thanks{
+  display:none;
+  line-height: 40px;
+  background-color: #DDFFDD;
+  border: 1px solid #00D900;
+  text-align: center;
+}
+
+#email_thanks{
   display:none;
   line-height: 40px;
   background-color: #DDFFDD;

@@ -24,13 +24,12 @@
       
       <div id="topsection"><div class="innertube"><h1>Democlarity</h1></div></div>
       <div class="mattblacktabs">
-	<ul>
-	  <li><a href="http://www.dynamicdrive.com">Home</a></li>
-	  <li><a href="http://www.dynamicdrive.com/new.htm">Issues</a></li>
-	  <li><a href="http://www.dynamicdrive.com/style/">Profile</a></li>
-	  <li><a href="http://www.dynamicdrive.com/forums/">Etc.</a></li>
-	  <li><a href="http://tools.dynamicdrive.com/imageoptimizer/">Etc.</a></li>
-	</ul>
+        <ul>
+          <li><a onclick="alert('pending implementation');">Bills</a></li>
+          <li><a onclick="alert('pending implementation');">Groups</a></li>
+          <li><a href="issuepage.html">Issues</a></li>
+          <li><a href="myhomepage.html">Home</a></li>
+        </ul>
       </div>
       
       
@@ -48,7 +47,6 @@
 	      
 	    </div><!--innertube-->
 	  </div><!--newsitem-->
-
 
 	  <!--  !!!!!!! JS FORM !!!!! -->
 	  <div class="action_item">
@@ -85,7 +83,7 @@
 
 	    <div class="action_item">
 	      <div class="action_header">
-		<h3>(Worth 50 signatures)</h3>
+		<h3>Worth 50 signatures</h3>
 		<h2>Contact your Representative</h2>
 	      </div>
 	      <div class="content">
@@ -95,7 +93,7 @@
 
 	    <div class="action_item">
 	      <div class="action_header">
-		<h3>(Worth 5000 signatures)</h3>
+		<h3>Worth 5000 signatures</h3>
 	      <h2>Donate to the Cause</h2>
 	      </div>
 	      <div class="content">
@@ -115,41 +113,62 @@
 Currently gun licences are offered for lifetime, without re-assessment of person's suitability for gun ownership. House Resolution 45 limits a firearms license to five years, after which the owner is forced to re-apply for a license. This helps keep guns out of the hands of convicted felons, and off our streets. Owning a handgun is a privilege, not a right, and this bill ensures that gun owners make a commitment to safe and responsible gun ownership.
 		  </textarea>
 		</div>
+		<div class="import_spacer">
+
 		<div class="import_message">Tell Friends on:</div>
 		<div class="carrier">
-		  Gmail
+		  <img src="images/gmail_small.gif"/> Gmail
 		</div>
 		<div class="carrier">
-		  Hotmail
+		  <img src="images/hotmail_small.gif"/> Hotmail
 		</div>
 		<div class="carrier">
-		  Yahoo
+		  <img src="images/yahoo_mail_small.gif"/> Yahoo Mail
+		</div>
 		</div>
 		<br class="clearfix"/>
-		<div>Or send to <input type="input" value="Email address" class="hinted"/></div>
+		<div><b>Or send to: </b> <input type="input" value="Email address" class="hinted" id="email_input" style="color: #888888;" onclick="this.value=''; this.style.color='black';"/></div>
 		  <br class="clearfix"/>
-		  <input type="submit" class="submit" value="Send It!" />
-		  </div>
+		  <input type="submit" class="submit" value="Send It!" id="email_submit" onclick="send_email();"/>
+		  <div id="email_thanks">Thank you for your support!</div>
+	      </div>
 
 		</div>
-	      </div>
-	    </div>
 
+	  <div id="newsitem">
+	    <div class="innertube">
+	      <h2 class="pp_hackheader">Stay Informed about Gun Control</h2>
+	      <p>Give me updates about:</p>
+	      <p>
+		<input type="checkbox" name="f_1" id="f_1"/><label for="f_1">Bills sponsored by the NRA</label><br/>
+		<input type="checkbox" name="f_2" id="f_2"/><label for="f_2">Other bills affecting gun control</label><br/>
+		<input type="checkbox" name="f_3" id="f_3"/><label for="f_3">Other bills affecting the NRA</label><br/>
+	      </p>
+	    </div><!--innertube-->
+	  </div><!--newsitem-->
+
+
+	      <center>
+		<input type="submit" class="vote_blue" value="See More Issues" onclick="window.location='myhomepage.html'"/>
+
+	      </center>
+	      </div>
 		
 	</div><!--contentcolumn-->
       </div><!--contentwrapper-->
 	  </div>
-	  
+	  <div id="leftcolumnshell">
+	  </div>
 	  <div id="leftcolumn">
 	    <div class="innertube"><H3>Choose your Impact</h3>
 	      <p>You choose your way to be heard. Although every message matters, our "Volume" point guide lets you know which method is the most effective getting your message across to the leaders who shape our laws.</p>
 	      <p>For more impact, do more than one action.</p><p><em>It adds up.</em></p>
 	    </div><!--innertube-->
 	  </div><!--leftcolumn-->
-	  
-	  <div id="footer"><a href="http://www.dynamicdrive.com/style/">Democlarity</a></div>
-	  
-	</div>
+ 
+          <div id="footer">Democlarity</a>
+
+        </div>
       </body>
     </html>
       

@@ -15,4 +15,13 @@ var sign_petition = function(){
 
     $('#petition_submit').hide();
     $('#petition_thanks').fadeIn();
-}
+};
+
+var send_email = function(){
+    $.each($('#email_input'), function( which, each){
+	    each.value = "";
+	});
+
+    $('#email_submit').hide();
+    $('#email_thanks').fadeIn();
+};
