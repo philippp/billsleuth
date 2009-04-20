@@ -5,14 +5,12 @@ line-height: 1em;
 }
 
 .pp_newsitem_spacer {
- 		    padding: 10px;
-}
+ 		    padding-bottom: 10px;
+			}
 
 .pp_newsitem_spacer h4 { 
-  padding: 0 0 6px 0;
-  margin: 0;
-  border-bottom:2px solid #0E83A9;
-color:#0E83A9;
+padding: 10px;
+margin: 0;
 font-family:georgia,garamond;
 font-size:22px;
 font-style:italic;
@@ -22,14 +20,21 @@ font-weight:bold;
 
 div.status_listing table{
 font-family: helvetica, arial; 
+width: 600px;
 }
 
 table thead td { 
       color: white; 
       line-height: 22px;
       font-weight: bolder;
-      background-color: #78C4DC;
+      background-color: #8a8a8a;
+	  
 } 
+
+.navchilditem li {
+background: #fff;
+height: 100px;
+}
 
 
 table tbody td {
@@ -54,7 +59,7 @@ body{
 margin:0;
 padding:0;
 line-height: 1.1em;
-background: transparent url(../images/headergradient.jpg) top left repeat-x;
+background: #e0e0e0 url(../images/headergradient3.png) top left repeat-x;
 font-family: helvetica, arial, sans-serif;
 }
 
@@ -63,25 +68,26 @@ clear: both;
 }
 
 h2, h3 {
-color: #0e83a9;
+color: #1a5396;
 }
 
 h4 {
-color: #0e83a9;
+color: #1a5396;
 font-weight: bold;
 font-size: 22px;
 }
 
 #maincontainer{
-width: 900px; /*Width of main container*/
+width: 980px; /*Width of main container*/
 margin: auto; /*Center container on page*/
 background: transparent;
 }
 
 #topsection{
-background: transparent url(../images/logo.png) top left no-repeat;
-height: 140px; /*Height of top section*/
-margin-top: -10px;
+background: transparent url(../images/logosmallerwhite.png) top left no-repeat;
+height: 124px; /*Height of top section*/
+margin-top: 0px;
+margin-left: 0px;
 
 }
 
@@ -97,50 +103,55 @@ text-transform: uppercase;
 #contentwrapper{
 float: left;
 width: 100%;
-margin-top: 40px;
+margin-top: 0px;
 }
 
 #contentcolumn{
-margin-left: 220px; /*Set left margin to LeftColumnWidth*/
+margin-left: 240px; /*Set left margin to LeftColumnWidth*/
 }
 
 #newsitem, #billstatus {
 margin: 20px;
-background: #fff;
+width: 621px;
+background: #fff ;
 border: 2px solid #d2d2d2;
 }
 
 
 
 #pagetitle{
+background: #ed493c url(../images/pagetitletop.png) top left no-repeat;
 margin: 20px;
+width: 625px;
 }
 
 #leftcolumn{
 float: left;
 width: 209px; /*Width of left column*/
-margin-left: -900px; /*Set left margin to -(MainContainerWidth)*/
+margin-left: -956px; /*Set left margin to -(MainContainerWidth)*/
 
-background: transparent;
-border-left: 8px solid #78c4dc;
-border-right: 8px solid #78c4dc;
-border-bottom: 8px solid #78c4dc;
-margin-top: 200px;
-padding-top: 20px;
+background: #fff;
+border-left: 4px solid #035ea5;
+border-right: 4px solid #035ea5;
+border-bottom: 4px solid #035ea5;
+margin-top: 120px;
+padding-top: 0px;
+height: 100%;
 }
-
 
 #leftcolumnshell {float: left;
 width: 230px; /*Width of left column*/
-margin-left: -902px; /*Set left margin to -(MainContainerWidth)*/
-background: #fff url(../images/sidebarbanner.png) top center no-repeat;
+margin-left: -962px; /*Set left margin to -(MainContainerWidth)*/
+background: transparent url(../images/sidebarwhite2.png) top center no-repeat;
 padding-top: 220px;
-margin-top: 30px;
+margin-top: 0px;
 }
 
 
 #advertisement {
-margin-left: 20px;
+margin-left: 10px;
+margin-top: 20px;
+width: 625px;
 }
 
 #video {
@@ -156,13 +167,12 @@ margin-bottom: 20px;
 }
 
 #footer{
-clear: left;
+clear: both;
 width: 100%;
-background: black;
 color: #FFF;
 text-align: center;
 padding: 4px 0;
-background: #3089fc;
+background: #144278 url(../images/topstripes.jpg) top left repeat-x;
 padding: 8px;
 }
 
@@ -178,7 +188,7 @@ margin-top: 0;
 }
 
 
-.mattblacktabs{
+
 margin-top: -68px;
 width: 100%;
 overflow: hidden;
@@ -251,7 +261,7 @@ margin: 0;
 padding: 7px 8px; /*padding inside each tab*/
 border-right: 3px solid white; /*right divider between tabs*/
 color: white;
-background: #3abadd; /*background of tabs (default state)*/
+background: #3089fc; /*background of tabs (default state)*/
 }
 
 .newstabs li a:visited{
@@ -259,7 +269,7 @@ color: white;
 }
 
 .newstabs li a:hover, .newstabs li.selected a{
-background: #3089fc; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+background: #3abadd; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
 }
 
 /* fancytabs*/
@@ -358,11 +368,11 @@ border-bottom: thin solid #d2d2d2;
 #newsitem h2, h3, #billstatus h2, h3{
 
 	font-size: 22px;
-color: #0e83a9;
+color: #388fed;
 font-family: georgia, garamond;
 font-style: italic;
 font-weight: bold;
-border-bottom: 2px solid  #0e83a9;
+border-bottom: 2px solid  #1a5396;
 padding-bottom: 6px;
 }
 
@@ -372,8 +382,8 @@ font: 11px;
 }
 
 #billstatus {
-background:  #abe0f1;
-border: 2px solid  #0e83a9;
+background:  #d2d2d2;
+border: 2px solid  #1a5396;
 }
 
 #pagetitle h2{
@@ -381,13 +391,14 @@ text-transform: uppercase;
 font-weight: bold;
 font: 26px;
 color: white;
-background: #3089fc;
-padding: 8px;
+
+padding: 8px 12px;
 line-height: 1.3em;
+background: #ed493c url(../images/pagetitletop.jpg) top left no-repeat;
 }
 
 #leftcolumn h3 {
-color: #0e83a9;
+color: #388fed;
 }
 
 
@@ -405,10 +416,17 @@ line-height: 1em;
 
 #leftcolumn li {
 list-style-image: url(../images/bullet.png);
-color: #0e83a9;
+
+color: #1a5396;
 font-weight: bold;
 font-family: trebuchet;
 font-size: 16px;
+margin-left: -14px;
+}
+
+#leftcolumn li a {
+text-decoration: none;
+color: #1a5396;
 }
 
 
@@ -456,3 +474,60 @@ padding:5px 10px;
   margin: 0 10px;
 
 }
+
+/* MAIN NAV */
+
+.topnav{
+margin-top: 0px;
+margin-right: 24px;
+
+overflow: hidden;
+background: transparent url(../images/navbackground.png)top right no-repeat;
+padding-bottom: 20px;
+
+}
+
+.topnav ul{
+
+margin: 0;
+padding: 0;
+padding-right: 24px; /*offset of tabs relative to browser left edge*/
+
+font: bold 14px helvetica;
+list-style-type: none;
+text-transform: uppercase;
+
+
+}
+
+.topnav li{
+display: inline;
+margin:0px;
+color: #1a5396;
+
+}
+
+.topnav li a{
+float: right;
+display: block;
+text-decoration: none;
+border-bottom: 0px solid #1a5396;
+margin-top: 0px;
+padding: 10px 10px; /*padding inside each tab*/
+color: #1a5396;
+background: #transparent; /*background of tabs (default state)*/
+}
+
+.topnav li a:visited{
+color: #1a5396;
+}
+
+.topnav li a:hover {
+background: #e0e0e0; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+}
+
+
+
+.moreissues {
+margin-bottom: 20px;
+

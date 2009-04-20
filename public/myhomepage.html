@@ -10,7 +10,9 @@
 
 	<title>Open Democracy</title>
 <style type="text/css" media="all">
-		@import "css/style.css";
+		@import "css/style2.css";
+		@import "css/nav2.css";
+
 	</style>
 
 
@@ -19,33 +21,55 @@
 <body>
 <div id="maincontainer">
 
-<div id="topsection"><div class="innertube"><h1>Open Democracy</h1></div></div>
-<div class="mattblacktabs">
-        <ul>
-          <li><a onclick="alert('pending implementation');">Bills</a></li>
-          <li><a onclick="alert('pending implementation');">Groups</a></li>
-          <li><a href="issuepage.html">Issues</a></li>
-          <li><a href="myhomepage.html">Home</a></li>
-        </ul>
+ <div id="topsection">
+	  <div id="navcontainer">
+<ul class="navlist">
+<li><a onclick="alert('pending implementation')">Login</a>
+
+<ul class="subnavlist">
+<li class="first"><input type="text" value="username" /></li>
+<li><input class="login" type="text" value="password" /></li>
+<li><input class="loginbutton" type="button" value="LOGIN" /></li>
+<li class="last"><a onclick="alert('pending implementation')">Sign Up!</a></li>
+</ul>
+
+</li>
+
+<li><input class="login" type="text" value="search" /><input class="searchbutton" type="button" value="GO" />
+<ul class="subnavlist">
+<li class="first"><a onclick="alert('pending implementation')">Search Bills</a></li>
+<li><a onclick="alert('pending implementation')">Search Groups</a></li>
+<li class="last"><a onclick="alert('pending implementation')">Search Issues</a></li>
+
+</ul>
+
+</li>
+
+</ul>
 </div>
+	<div class="innertube">
+	  <h1>Democlarity</h1>
+        </div>
+      </div>
 
 
 
 <div id="contentwrapper">
 <div id="contentcolumn">
+<div id="advertisement" onclick="window.location='stanceplain.html'">
+   <div class="adtop">Sponsored Message from the Society for the Prevention of Gun Violence</div>
+<img src="images/adbanner720.jpg" title="ad banner" alt="" />
+
+</div><!--advertisement-->
 <div id="pagetitle">
 <h2>My Issues</h2>
 </div><!--pagetitle-->
 
-<div id="advertisement" onclick="window.location='stanceplain.html'">
-<div class="innertube">
-<img src="images/adbanner.jpg" title="ad banner" alt="" />
-</div>
-</div><!--advertisement-->
+
 
 <div class="status_listing">
 
-<div id="newsitem">
+<div class="newsitem">
   <div class="innertube">
     <h2>Gun Control</h2>
 
@@ -82,7 +106,7 @@
 </div><!--newsitem-->
 
 
-<div id="newsitem">
+<div class="newsitem">
   <div class="innertube">
     <h2>Sierra Club</h2>
     <table cellspacing="0">
@@ -116,10 +140,10 @@
 </div><!--newsitem-->
 
 
-<div id="newsitem">
-  <div class="innertube" cellspacing="0">
+<div class="newsitem">
+  <div class="innertube" >
     <h2>ACLU</h2>
-    <table>
+    <table cellspacing="0">
       <thead>
       <tr>
 	<td>Introduced</td><td>Bill #</td><td>Bill Name</td>
@@ -150,7 +174,7 @@
 </div><!--newsitem-->
 
 
-<div id="newsitem">
+<div class="newsitem">
   <div class="innertube">
     <h2>Taxation</h2>
     <table cellspacing="0">
@@ -199,12 +223,33 @@
 	    <li>Taxation</li>
 	    <li><a href="#">more</a></li>
 	  </ul>
+	    <h3>News Items</h3>
+	  <ul class="sidebar">
+	    <li>HR 45 - New Attack on the 2nd Amendment!</li>
+	    <li>Say No to the Nanny State</li>
+	    <li>HR 45 - Dead with no co-sponsors and now back</li>
+	    <li><a href="#">more</a></li>
+	  </ul>
+
+	  <h3>Similar Issues</h3>
+	  <ul>
+	    <li>Gun Control</li>
+	    <li>Second Amendment</li>
+	    <li>Anti-gun Legislation</li>
+	    <li><a href="#">more</a></li>
+	  </ul>
+
+	  <h3>Other Issues</h3>
+	  <ul>
+	    <li>Climate Change</li>
+	    <li>Gay Marriage</li>
+	    <li>Corporate Bailouts</li>
+	    <li><a href="#">more</a></li>
+	  </ul>
 	</div><!--innertube-->
       </div><!--leftcolumn-->
-
-
-<div id="footer">Democlarity</a>
-
 </div>
+
+<div id="footer">Democlarity</div>
 </body>
 </html>

@@ -10,11 +10,12 @@
     
     <title>Gun Licensing - Keep unlicensed guns off our streets!</title>
     <link rel="stylesheet" href="css/action_items.css" />
-    <script src="javascripts/jquery.js"></script>
-    <script src="javascripts/action_items.js"></script>
+    <script src="javascripts/jquery.js" type=""></script>
+    <script src="javascripts/action_items.js" type=""></script>
     <style type="text/css" media="all">
-      @import "css/style.css";
-    </style>
+      @import "css/style2.css";
+      @import "css/nav2.css";
+</style>
     
     
     
@@ -22,14 +23,37 @@
   <body>
     <div id="maincontainer">
       
-      <div id="topsection"><div class="innertube"><h1>Democlarity</h1></div></div>
-      <div class="mattblacktabs">
-        <ul>
-          <li><a onclick="alert('pending implementation');">Bills</a></li>
-          <li><a onclick="alert('pending implementation');">Groups</a></li>
-          <li><a href="issuepage.html">Issues</a></li>
-          <li><a href="myhomepage.html">Home</a></li>
-        </ul>
+      <div id="topsection">
+	  <div id="navcontainer">
+<ul class="navlist">
+<li><a onclick="alert('pending implementation')">Login</a>
+
+<ul class="subnavlist">
+<li class="first"><input type="text" value="username" /></li>
+<li><input class="login" type="text" value="password" /></li>
+<li class="last"><input class="loginbutton" type="button" value="LOGIN" /></li>
+
+</ul>
+
+</li>
+<li><a onclick="alert('pending implementation')">Sign Up</a></li>
+
+<li><input class="login" type="text" value="search" /><input class="searchbutton" type="button" value="GO" />
+<ul class="subnavlist">
+<li class="first"><a onclick="alert('pending implementation')">Search Bills</a></li>
+<li><a onclick="alert('pending implementation')">Search Groups</a></li>
+<li class="last"><a onclick="alert('pending implementation')">Search Issues</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+</div>
+	
+	<div class="innertube">
+	  <h1>Democlarity</h1>
+        </div>
       </div>
       
       
@@ -39,7 +63,7 @@
 	    <h2>Our Leaders Must Act!</h2>
 	  </div>
 	  
-	  <div id="newsitem">
+	  <div class="newsitem">
 	    <div class="innertube">
 	      <p>We have witnessed major shootings in senior centers, churches, high schools, colleges, and workplaces. The five-year licenses for firearms created by this bill will help keep guns out of unstable hands. <b>Over and over Congress opts to do nothing while the body count continues to rise.</b></p>
 	      <p><b>The Congress and the White House must act to protect our families and communities from gun violence.</b> Without a nationwide system to ensure all guns are properly licensed, more innocent lives will be lost to gun violence.</p>
@@ -57,7 +81,7 @@
 	    <div class="content">
 	      <div class="letter">
 		<div>Dear sir,</div>
-		<p>We are outraged and saddened by the increased gun violence in America, including the recent mass shootings in Alabama, California, Florida, North Carolina, and New York. Unfortunately, incidents like this happen all too often in all parts of this nation. Our weak gun laws make weapons too readily available to dangerous people.<p>
+		<p>We are outraged and saddened by the increased gun violence in America, including the recent mass shootings in Alabama, California, Florida, North Carolina, and New York. Unfortunately, incidents like this happen all too often in all parts of this nation. Our weak gun laws make weapons too readily available to dangerous people.</p>
 		    
 		<p>Allowing dangerous people to get easy access to dangerous weapons is foolhardy and the results are tragic. We can take steps to prevent tragedies like this in the future. We call on you to recognize that the people are saying "Enough Is Enough! We Demand Strong Gun Laws"</p>
 	      </div>
@@ -71,13 +95,13 @@
 		<div class="label" >Address 2:</div>
 		<input type="text" class="petition_form_text"/>
 		
-		<p><input type="checkbox" checked/>
+		<p><input class="petition" type="checkbox" checked />
 		Keep me updated about this issue</p>
-		<p><input type="checkbox"/> I am a Survivor of Gun Violence</p>
+		<p><input class="petition" type="checkbox"/> I am a Survivor of Gun Violence</p>
 		<input type="submit"  class="submit" value="Sign It" onclick="sign_petition();" id="petition_submit"/>
 		<div id="petition_thanks">Thank you for your support!</div>
 	      </div>
-	      <br class="clearfix">
+	      <br class="clearfix" />
 	      </div>
 	    </div>
 
@@ -108,7 +132,7 @@
 	      </div>
 	      <div class="content">
 		<div>
-		  <input type="textbox" value="Less guns in our neighborhoods" length=30 class="em_header"/>
+		  <input type="text" value="Less guns in our neighborhoods" length=30 class="em_header"/>
 		  <textarea class="em_body">Dear Friend,
 Currently gun licences are offered for lifetime, without re-assessment of person's suitability for gun ownership. House Resolution 45 limits a firearms license to five years, after which the owner is forced to re-apply for a license. This helps keep guns out of the hands of convicted felons, and off our streets. Owning a handgun is a privilege, not a right, and this bill ensures that gun owners make a commitment to safe and responsible gun ownership.
 		  </textarea>
@@ -117,13 +141,13 @@ Currently gun licences are offered for lifetime, without re-assessment of person
 
 		<div class="import_message">Tell Friends on:</div>
 		<div class="carrier">
-		  <img src="images/gmail_small.gif"/> Gmail
+		  <img src="images/gmail_small.gif" alt="" /> Gmail
 		</div>
 		<div class="carrier">
-		  <img src="images/hotmail_small.gif"/> Hotmail
+		  <img src="images/hotmail_small.gif" alt="" /> Hotmail
 		</div>
 		<div class="carrier">
-		  <img src="images/yahoo_mail_small.gif"/> Yahoo Mail
+		  <img src="images/yahoo_mail_small.gif" alt="" /> Yahoo Mail
 		</div>
 		</div>
 		<br class="clearfix"/>
@@ -135,24 +159,24 @@ Currently gun licences are offered for lifetime, without re-assessment of person
 
 		</div>
 
-	  <div id="newsitem">
+	  <div class="newsitem">
 	    <div class="innertube">
-	      <h2 class="pp_hackheader">Stay Informed about Gun Control</h2>
+	      <h2>Stay Informed about Gun Control</h2>
 	      <p>Give me updates about:</p>
 	      <p>
-		<input type="checkbox" name="f_1" id="f_1"/><label for="f_1">Bills sponsored by the NRA</label><br/>
-		<input type="checkbox" name="f_2" id="f_2"/><label for="f_2">Other bills affecting gun control</label><br/>
-		<input type="checkbox" name="f_3" id="f_3"/><label for="f_3">Other bills affecting the NRA</label><br/>
+		<input class="petition" type="checkbox" name="f_1" id="f_1"/><label for="f_1">Bills sponsored by the NRA</label><br/>
+		<input class="petition" type="checkbox" name="f_2" id="f_2"/><label for="f_2">Other bills affecting gun control</label><br/>
+		<input class="petition" type="checkbox" name="f_3" id="f_3"/><label for="f_3">Other bills affecting the NRA</label><br/>
 	      </p>
 	    </div><!--innertube-->
 	  </div><!--newsitem-->
 
 
 	      <center>
-		<input type="submit" class="vote_blue" value="See More Issues" onclick="window.location='myhomepage.html'"/>
+		<input  type="submit" class="vote_green moreissues" value="See More Issues" onclick="window.location='myhomepage.html'"/>
 
 	      </center>
-	      </div>
+	   
 		
 	</div><!--contentcolumn-->
       </div><!--contentwrapper-->
@@ -160,15 +184,31 @@ Currently gun licences are offered for lifetime, without re-assessment of person
 	  <div id="leftcolumnshell">
 	  </div>
 	  <div id="leftcolumn">
-	    <div class="innertube"><H3>Choose your Impact</h3>
+	    <div class="innertube"><h3>Choose your Impact</h3>
 	      <p>You choose your way to be heard. Although every message matters, our "Volume" point guide lets you know which method is the most effective getting your message across to the leaders who shape our laws.</p>
 	      <p>For more impact, do more than one action.</p><p><em>It adds up.</em></p>
+		  <h3>Similar Issues</h3>
+	  <ul>
+	    <li>Gun Control</li>
+	    <li>Second Amendment</li>
+	    <li>Anti-gun Legislation</li>
+	    <li><a href="#">more</a></li>
+	  </ul>
+
+	  <h3>Other Issues</h3>
+	  <ul>
+	    <li>Climate Change</li>
+	    <li>Gay Marriage</li>
+	    <li>Corporate Bailouts</li>
+	    <li><a href="#">more</a></li>
+	  </ul>
 	    </div><!--innertube-->
 	  </div><!--leftcolumn-->
  
-          <div id="footer">Democlarity</a>
+          
 
-        </div>
+        
+		<div id="footer">Democlarity</div>
       </body>
     </html>
       
